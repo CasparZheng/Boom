@@ -27,7 +27,7 @@ public enum Icon {
 
 public enum BackgroundStyle {
     case color(UIColor)
-    case blur(UIBlurEffectStyle)
+    case blur(UIBlurEffect.Style)
     
     var isBlur: Bool {
         switch self {

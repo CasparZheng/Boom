@@ -93,10 +93,10 @@ class SnackBar: CardView {
         
         titleLabel.frame = CGRect(x: closeButton.frame.maxX, y: 0, width: actionButton.frame.minX - closeButton.frame.maxX - 8, height: bounds.height)
     }
-    func onTouchActionButton(_ sender: UIButton) {
+    @objc func onTouchActionButton(_ sender: UIButton) {
         actionHandler()
     }
-    func onTouchCloseButton(_ sender: UIButton) {
+    @objc func onTouchCloseButton(_ sender: UIButton) {
         closeHandler()
     }
 }
